@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+  .logo { font-size: 1.5rem; font-weight: bold; }
+  ul { list-style: none; display: flex; gap: 1rem; }
+  a { color: white; text-decoration: none; }
+  a:hover { color: #ddd; }
+
+  :host {
+    display: block;
+    background: var(--gray-900);
+    color: white;
+    padding: 1rem;
+  }
