@@ -12,5 +12,10 @@ footer {
     text-align: center;
   }
   a{
-    color: white;
+    font-weight: bold;
+    color: rgb(185, 20, 20);
+  }
+  .email{
+    font-weight: bold;
+    color: rgb(19, 16, 193);
   }
