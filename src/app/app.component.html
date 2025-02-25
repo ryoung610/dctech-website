@@ -30,17 +30,19 @@
     flex-direction: column; /* Stack children vertically */
   }
 
-  app-navbar {
-    width: 100%;
-  }
-
-  app-footer {
-    width: 100%;
-  }
+ 
 </style>
-
+<div class="top-container">
+  <div class="hero01-image"></div>
+  </div>
+<div class="header" id="myHeader">
 <app-navbar></app-navbar>
+</div>
+
+<div class="content">
 <main>
   <router-outlet></router-outlet>
 </main>
+</div>
+
 <app-footer></app-footer>

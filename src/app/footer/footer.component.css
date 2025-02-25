@@ -1,7 +1,7 @@
 footer { 
     text-align: center; 
     padding: 1rem; 
-    background-color: #333; 
+    background-color: #1b1212; 
     color: white; 
 }
 :host {
@@ -10,4 +10,7 @@ footer {
     color: white;
     padding: 1rem;
     text-align: center;
+  }
+  a{
+    color: white;
   }

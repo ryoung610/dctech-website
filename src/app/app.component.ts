@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component'; // Adjust path
 import { FooterComponent } from './footer/footer.component'; // Add this
+import { CommonModule } from '@angular/common'; 
 
 @Component({
   selector: 'app-root',
