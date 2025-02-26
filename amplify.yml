@@ -13,7 +13,7 @@ frontend:
       commands:
         - node -v            # Verify version in logs
   artifacts:
-    baseDirectory: dist/dctech-website  # Matches your package.json build output
+    baseDirectory: dist/dctech-website/browser  # Matches your package.json build output
     files:
       - '**/*'
   cache:
