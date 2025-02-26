@@ -1,0 +1,17 @@
+{
+    "extends": "./tsconfig.app.json",
+    "compilerOptions": {
+      "outDir": "./out-tsc/app-server",
+      "target": "ES2022",
+      "module": "es2022",
+      "types": ["node"],
+      "bundler": "esbuild"
+    },
+    "files": [
+      "src/main.server.ts"
+    ],
+    "angularCompilerOptions": {
+      "enableIvy": false
+    }
+  }
+  
