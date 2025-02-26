@@ -1,0 +1,21 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - nvm install 18.19.1  # Install exact Node version
+        - nvm use 18.19.1      # Switch to it
+        - npm ci               # Install dependencies with locked versions
+    build:
+      commands:
+        - npm run build -- --configuration production
+    postBuild:
+      commands:
+        - node -v            # Verify version in logs
+  artifacts:
+    baseDirectory: dist/dctech-website  # Matches your package.json build output
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
