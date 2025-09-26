@@ -23,6 +23,17 @@ export const data = defineData({
   authorizationModes: {
     defaultAuthorizationMode: 'identityPool',
   },
+  // Optimize connection usage
+  conflictResolution: {
+    project: {
+      strategy: 'AUTOMERGE',
+    },
+  },
+  // Reduce connection pool usage
+  sync: {
+    maxRecordsToSync: 1000, // Limit sync records
+    fullSyncInterval: 24, // Hours between full syncs
+  },
 });
 
 /*== STEP 2 ===============================================================
